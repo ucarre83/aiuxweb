@@ -1,0 +1,105 @@
+"/app/page.tsx";
+import Image from 'next/image';
+import Link from 'next/link';
+
+// Placeholder for fetching and rendering markdown content for the hero section
+const heroTitle = "LUJO Y MODERNIDAD EN EL DESARROLLO DE SOFTWARE E INTELIGENCIA ARTIFICIAL";
+const heroSubtitle = "Somos una compañía especializada en el desarrollo de software a medida y la implementación de soluciones de Inteligencia Artificial (IA) de última generación, concebida para transformar radicalmente la manera en que las pequeñas, medianas y grandes empresas operan, compiten y triunfan en el mercado global.";
+
+// Placeholder for content that would come from home_content_es.md
+const aboutUsExcerpt = "Desde nuestra fundación, hemos abrazado el desafío de convertir ideas complejas en realidades digitales tangibles y eficientes. Entendemos que cada organización posee una identidad única y enfrenta retos particulares; por ello, nuestro enfoque se distingue por la personalización extrema y la búsqueda incesante de la perfección...";
+const servicesExcerpt = "Ofrecemos un ecosistema integral de servicios diseñados para potenciar la innovación y la eficiencia en organizaciones de todos los tamaños. Nuestra propuesta de valor se articula en torno al desarrollo de software de vanguardia y la implementación estratégica de soluciones de IA...";
+
+const HomePage = () => {
+  return (
+    <div className="min-h-screen bg-aiux-black text-aiux-cream">
+      {/* Hero Section */}
+      <section className="relative h-[calc(100vh-5rem)] flex items-center justify-center text-center px-4 sm:px-6 lg:px-8 bg-cover bg-center" style={{ backgroundImage: "url('/placeholder-hero-bg.jpg')" }}> {/* Replace with actual or generated image */}
+        <div className="absolute inset-0 bg-aiux-black opacity-75"></div> {/* Overlay */}
+        <div className="relative z-10 max-w-4xl">
+          <h1 className="text-4xl sm:text-5xl md:text-6xl font-extrabold text-aiux-gold uppercase tracking-wider">
+            {heroTitle.split(' ').slice(0, 4).join(' ')} <br className="hidden md:block" /> {heroTitle.split(' ').slice(4).join(' ')}
+          </h1>
+          <p className="mt-6 text-lg sm:text-xl text-aiux-light-cream max-w-2xl mx-auto">
+            {heroSubtitle.substring(0,200)}...
+          </p>
+          <div className="mt-10">
+            <Link href="/about" legacyBehavior>
+              <a className="inline-block bg-aiux-gold text-aiux-black hover:bg-aiux-cream hover:text-aiux-black transition-colors duration-300 text-lg font-semibold py-3 px-8 rounded-md shadow-lg">
+                CONOCE MÁS
+              </a>
+            </Link>
+          </div>
+        </div>
+        {/* Placeholder for the polygonal head image - consider absolute positioning */}
+        {/* <div className="absolute right-0 top-1/2 transform -translate-y-1/2 opacity-50 hidden lg:block">
+          <Image src="/placeholder-polygonal-head.png" alt="AIUX Studio Abstract Art" width={400} height={400} />
+        </div> */}
+      </section>
+
+      {/* About Us Excerpt Section */}
+      <section className="py-16 md:py-24 bg-aiux-black">
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-aiux-gold mb-6">SOBRE NOSOTROS</h2>
+          <p className="text-lg text-aiux-light-cream leading-relaxed max-w-3xl mx-auto">
+            {aboutUsExcerpt}
+          </p>
+          <div className="mt-8">
+            <Link href="/about" legacyBehavior>
+              <a className="text-aiux-gold hover:text-aiux-cream font-semibold transition-colors duration-300 border border-aiux-gold hover:border-aiux-cream py-2 px-6 rounded-md">
+                Leer Más Sobre AIUX STUDIO
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Services Excerpt Section */}
+      <section className="py-16 md:py-24 bg-gray-900"> {/* Slightly different background for contrast */}
+        <div className="max-w-5xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-aiux-gold mb-12">NUESTROS SERVICIOS</h2>
+          <div className="grid md:grid-cols-3 gap-8 text-left">
+            <div className="bg-aiux-black p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-aiux-gold mb-3">SOLUCIONES IA</h3>
+              <p className="text-aiux-light-cream text-sm">Estrategias de IA a medida para transformar su negocio, optimizando procesos y desbloqueando nuevas oportunidades de crecimiento.</p>
+            </div>
+            <div className="bg-aiux-black p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-aiux-gold mb-3">DESARROLLO SOFTWARE</h3>
+              <p className="text-aiux-light-cream text-sm">Equipos de desarrollo específicos para crear soluciones de software robustas, escalables y perfectamente alineadas con sus objetivos.</p>
+            </div>
+            <div className="bg-aiux-black p-6 rounded-lg shadow-xl hover:shadow-2xl transition-shadow duration-300">
+              <h3 className="text-2xl font-semibold text-aiux-gold mb-3">DISEÑO UX/UI</h3>
+              <p className="text-aiux-light-cream text-sm">Innovación a través del diseño, optimizando la experiencia de usuario para garantizar la máxima usabilidad y satisfacción.</p>
+            </div>
+          </div>
+          <div className="mt-12">
+            <Link href="/services" legacyBehavior>
+              <a className="text-aiux-gold hover:text-aiux-cream font-semibold transition-colors duration-300 border border-aiux-gold hover:border-aiux-cream py-2 px-6 rounded-md">
+                Descubrir Todos los Servicios
+              </a>
+            </Link>
+          </div>
+        </div>
+      </section>
+
+      {/* Call to Action - Get In Touch */}
+      <section className="py-16 md:py-24 bg-aiux-black">
+        <div className="max-w-3xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+          <h2 className="text-3xl md:text-4xl font-bold text-aiux-gold mb-6">PÓNGASE EN CONTACTO</h2>
+          <p className="text-lg text-aiux-light-cream mb-8">
+            ¿Listo para llevar su empresa al siguiente nivel con soluciones de software e inteligencia artificial de vanguardia? Contáctenos hoy mismo.
+          </p>
+          <Link href="/contact" legacyBehavior>
+            <a className="inline-block bg-aiux-gold text-aiux-black hover:bg-aiux-cream hover:text-aiux-black transition-colors duration-300 text-lg font-semibold py-3 px-8 rounded-md shadow-lg">
+              CONTACTAR
+            </a>
+          </Link>
+        </div>
+      </section>
+
+    </div>
+  );
+};
+
+export default HomePage;
+

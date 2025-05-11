@@ -1,0 +1,23 @@
+{
+  "Navbar": {
+    "home": "HOME",
+    "about": "ABOUT US",
+    "services": "SERVICES",
+    "contact": "CONTACT"
+  },
+  "HomePage": {
+    "heroTitle": "LUXURY AND MODERNITY OF A SOFTWARE DEVELOPMENT AND ARTIFICIAL INTELLIGENCE COMPANY",
+    "learnMore": "LEARN MORE",
+    "aboutUsTitle": "ABOUT US",
+    "aboutUsText": "Providing cutting-edge digital solutions, we provide an expertise, innovation, user-centered design. Producing has fitted highest quality standards, Served out refferns tailored solutions for businesses.",
+    "servicesTitle": "SERVICES",
+    "aiSolutionsTitle": "AI SOLUTIONS",
+    "aiSolutionsText": "Strategic delivery - cutting-edge strategies in technology.",
+    "softwareDevelopmentTitle": "SOFTWARE DEVELOPMENT",
+    "softwareDevelopmentText": "Integrate design specificlin team.",
+    "uxDesignTitle": "UX DESIGN",
+    "uxDesignText": "Deliver innovation - a design optimization.",
+    "getInTouchTitle": "GET IN TOUCH",
+    "contactUs": "CONTACT US"
+  }
+}

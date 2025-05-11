@@ -1,0 +1,23 @@
+{
+  "Navbar": {
+    "home": "INICIO",
+    "about": "NOSOTROS",
+    "services": "SERVICIOS",
+    "contact": "CONTACTO"
+  },
+  "HomePage": {
+    "heroTitle": "LUJO Y MODERNIDAD DE UNA EMPRESA DE DESARROLLO DE SOFTWARE E INTELIGENCIA ARTIFICIAL",
+    "learnMore": "CONOCE MÁS",
+    "aboutUsTitle": "SOBRE NOSOTROS",
+    "aboutUsText": "Proporcionando soluciones digitales de vanguardia, ofrecemos experiencia, innovación y diseño centrado en el usuario. Producir ha ajustado los más altos estándares de calidad, sirviendo referencias y soluciones a medida para empresas.",
+    "servicesTitle": "SERVICIOS",
+    "aiSolutionsTitle": "SOLUCIONES IA",
+    "aiSolutionsText": "Entrega estratégica - estrategias de vanguardia en tecnología.",
+    "softwareDevelopmentTitle": "DESARROLLO DE SOFTWARE",
+    "softwareDevelopmentText": "Integramos un equipo de diseño específico.",
+    "uxDesignTitle": "DISEÑO UX",
+    "uxDesignText": "Entregamos innovación - una optimización del diseño.",
+    "getInTouchTitle": "PONERSE EN CONTACTO",
+    "contactUs": "CONTACTAR"
+  }
+}
